@@ -72,7 +72,7 @@ export default function readDicomElementImplicit (byteStream, untilTag, vrCallba
   }
 
   // non sequence element with known length, skip over the data part
-  byteStream.seek(element.length);
+  byteStream.seek(Math.min(element.length, byteStream.byteArray.length - byteStream.position));
 
   return element;
 }
