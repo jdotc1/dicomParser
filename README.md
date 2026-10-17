@@ -1,3 +1,13 @@
+## Read DICOM byte streams in JavaScript
+
+This is a development fork of [dicomParser](https://github.com/cornerstonejs/dicomParser), a JavaScript library for parsing DICOM Part 10 and raw dataset byte streams. Upstream exposes dataset elements and pixel-data locations for browser and Node.js applications, providing a useful foundation for metadata inspection and integration with imaging viewers.
+
+**Contribution to review:** [PR #285](https://github.com/cornerstonejs/dicomParser/pull/285) proposes validating ByteStream seek bounds and integer offsets. The pull request documents a focused parser input-handling change and remains an upstream proposal.
+
+Explore the [upstream live examples](https://cornerstonejs.github.io/dicomParser/examples/index.html), including the DICOM dump example, then use the `dicom-parser` installation and API notes below. The original scope and transfer-syntax guidance are retained. See the [branch comparison](https://github.com/cornerstonejs/dicomParser/compare/master...jdotc1:master) for this fork's default branch.
+
+---
+
 [![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![MIT License][license-image]][license-url] [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coverage-image]][coverage-url]
 
